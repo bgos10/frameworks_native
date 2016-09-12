@@ -1998,7 +1998,7 @@ bool SurfaceFlinger::doComposeSurfaces(const sp<const DisplayDevice>& hw, const 
         }
 
         // Never touch the framebuffer if we don't have any framebuffer layers
-#if defined(QTI_BSP) && defined(SDM_TARGET)
+#ifdef QTI_BSP
         const bool hasHwcComposition = hwc.hasHwcComposition(id) |
             (reinterpret_cast<ExHWComposer*>(&hwc))->getS3DFlag(id);
 #else

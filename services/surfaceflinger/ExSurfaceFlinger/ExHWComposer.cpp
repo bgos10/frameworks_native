@@ -76,7 +76,7 @@ bool ExHWComposer::isCompositionTypeBlit(const int32_t compType) const {
     return false;
 }
 
-#if defined(QTI_BSP) && defined(SDM_TARGET)
+#ifdef QTI_BSP
 uint32_t ExHWComposer::getS3DFlag(int disp) const {
     if (disp < 0) {
         return 0;
