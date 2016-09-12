@@ -50,7 +50,6 @@
 #include <display_config.h>
 #endif
 #endif
-#include <dlfcn.h>
 #include <cutils/properties.h>
 
 namespace android {
